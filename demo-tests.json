@@ -1,0 +1,28 @@
+{
+	"http://localhost:8080/status/400": [
+		{
+			"method": "GET",
+			"responseStatus": 400
+        }
+    ],
+    "http://localhost:8080/status/200?returnBody=true": [
+        {
+            "method": "POST",
+            "requestHeader": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "requestBody": "{\"test\":\"test\"}",
+            "responseStatus": 400,
+            "responseHeader": [
+                {
+                    "name": "Content-Type",
+                    "value": "text/plain"
+                }
+            ],
+            "responseBody": "{\"test\":\"test2\"}"
+        }
+    ]
+}
